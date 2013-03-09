@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="App15.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App15"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Foreground="Black" FlowDirection="RightToLeft" Loaded="Page_Loaded_1">
+
+    <Grid Background="White">
+        <GridView Margin="215,64,215,64"
+            x:Name="itemGridView"
+            AutomationProperties.AutomationId="ItemsGridView"                  
+            TabIndex="1"
+            Grid.RowSpan="2"
+            IsSwipeEnabled="false"
+            IsItemClickEnabled="True"
+            Grid.ColumnSpan="2" Background="Black" Foreground="{x:Null}" SelectionChanged="itemGridView_SelectionChanged">
+            <TextBox x:Name="TextBox1" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox2" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox3" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox4" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox5" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox6" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox7" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="White" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox8" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+            <TextBox x:Name="TextBox9" Width="300" Height="200" Background="White" Text="" FontSize="125" Foreground="Black" TextAlignment="Center" IsReadOnly="True"/>
+        </GridView>
+        <TextBlock x:Name="TextBox11" HorizontalAlignment="Left" TextWrapping="Wrap" Text="دور اللاعب : " FontSize="45" VerticalAlignment="Top" Width="221" Margin="524,709,0,0"/>
+        <TextBlock x:Name="TextBox10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="X" Foreground="Blue" FontSize="45" VerticalAlignment="Top" Width="33" Margin="784,709,0,0"/>
+        <TextBlock x:Name="Red" HorizontalAlignment="Left" Height="24" Margin="1702,536,-400,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="64" Foreground="Red"/>
+        <TextBlock x:Name="Blue" HorizontalAlignment="Left" Height="24" Margin="1854,608,-552,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="64" Foreground="Blue"/>
+        <Rectangle x:Name="Rectangle1" Fill="#33F4F4F5" HorizontalAlignment="Left" Height="699" Margin="150,54,0,0" Stroke="Black" VerticalAlignment="Top" Width="1044" Visibility="Collapsed"/>
+        <TextBlock x:Name="Green" HorizontalAlignment="Left" Height="24" Margin="2170,452,-868,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="64" Foreground="Lime"/>
+    </Grid>
+</Page>
