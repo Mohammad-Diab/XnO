@@ -1,0 +1,68 @@
+﻿<Window x:Class="XO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="X and O Game" Height="400" Width="500" Loaded="Window_Loaded_1" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="images/XO.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="301*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Margin="165,13,0,19" Stroke="{x:Null}" Width="5" Grid.Row="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="SkyBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Right" Margin="0,13,165,19" Stroke="{x:Null}" Width="5" Grid.Row="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="SkyBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="5" Margin="50,88,50,0" VerticalAlignment="Top" Grid.Row="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Blue" Offset="0"/>
+                    <GradientStop Color="SkyBlue" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="5" Margin="50,0,50,94" Stroke="{x:Null}" VerticalAlignment="Bottom" Grid.Row="1">
+            <Rectangle.Fill>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Blue" Offset="0"/>
+                <GradientStop Color="SkyBlue" Offset="1"/>
+            </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="b1" Margin="60,8,0,0" Background="White" BorderBrush="White" Click="Play_Click" HorizontalAlignment="Left" Width="100" Height="75" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button x:Name="b3" Margin="0,8,60,0" Background="White" BorderBrush="White" Click="Play_Click" HorizontalAlignment="Right" Width="100" Height="75" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button x:Name="b7" Margin="60,0,0,14" Background="White" BorderBrush="White" Click="Play_Click" HorizontalAlignment="Left" Width="100" Height="75" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <Button x:Name="b9" Margin="0,0,60,14" Background="White" BorderBrush="White" Click="Play_Click" Height="75" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" Grid.Row="1"/>
+        <Button x:Name="b4" Margin="60,113,0,113" Background="White" BorderBrush="White" Click="Play_Click" HorizontalAlignment="Left" Width="100" Grid.Row="1"/>
+        <Button x:Name="b5" Margin="191,108,190,115" Background="White" BorderBrush="White" Click="Play_Click" Grid.Row="1"/>
+        <Button x:Name="b6" Margin="0,110,60,116" Background="White" BorderBrush="White" Click="Play_Click" HorizontalAlignment="Right" Width="100" Grid.Row="1"/>
+        <Button x:Name="b2" Margin="196,7,196,0" Background="White" BorderBrush="White" Click="Play_Click" Height="75" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button x:Name="b8" Margin="196,0,196,14" Background="White" BorderBrush="White" Click="Play_Click" Height="75" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Grid.RowSpan="2">
+            <Run Text="Result:"/>
+            <LineBreak/>
+            <Run x:Name="for_x" Foreground="Green"/>
+            <Run Text="     For"/>
+            <Run Text="X" Foreground="RoyalBlue"/>
+            <LineBreak/>
+            <Run x:Name="for_o" Foreground="Green"/>
+            <Run Text="     For"/>
+            <Run Text="O" Foreground="Tomato"/>
+        </TextBlock>
+        <Button Content="Rest" HorizontalAlignment="Right" Margin="0,41,12,1" Width="76" Click="Rest_Click"/>
+        <Button Content="New Game" HorizontalAlignment="Right" Margin="0,10,12,32" Width="76" Click="NewGame_Click"/>
+    </Grid>
+</Window>
