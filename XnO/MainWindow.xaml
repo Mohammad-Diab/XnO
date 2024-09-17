@@ -64,6 +64,6 @@
         </TextBlock>
         <Button Content="Rest" HorizontalAlignment="Right" Margin="0,41,12,1" Width="76" Click="Rest_Click"/>
         <Button Content="New Game" HorizontalAlignment="Right" Margin="0,10,12,32" Width="76" Click="NewGame_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" Text="Dr.Mohammad@outlook.com" VerticalAlignment="Top" Foreground="RoyalBlue" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,5,0,0" TextWrapping="Wrap" Text="mohammad.diab93@outlook.com" VerticalAlignment="Top" Foreground="RoyalBlue" FontSize="18"/>
     </Grid>
 </Window>
