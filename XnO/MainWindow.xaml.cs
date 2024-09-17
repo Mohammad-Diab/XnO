@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace XO
+namespace XnO
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -38,12 +38,12 @@ namespace XO
                 int column = index % 3;
                 if (is_x_turn)
                 {
-                    image.Source = new BitmapImage(new Uri("pack://application:,,,/XO;component/Images/x.png"));
+                    image.Source = new BitmapImage(new Uri("pack://application:,,,/XnO;component/Images/x.png"));
                     state[raw][column] = 1;
                 }
                 else
                 {
-                    image.Source = new BitmapImage(new Uri("pack://application:,,,/XO;component/Images/o.png"));
+                    image.Source = new BitmapImage(new Uri("pack://application:,,,/XnO;component/Images/o.png"));
                     state[raw][column] = -1;
                 }
                 ((Button)sender).Content = image;

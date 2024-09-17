@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XO", "XO\XO.csproj", "{A9567D7D-29FE-45A9-961F-EFFC9A4FE22B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XnO", "XnO\XnO.csproj", "{A9567D7D-29FE-45A9-961F-EFFC9A4FE22B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
