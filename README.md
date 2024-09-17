@@ -7,7 +7,7 @@ A small X and O (tic-tac-toe) game for two players on the same PC. Written in C#
 - Players take turns clicking the squares of a 3 by 3 board; X and O are drawn as images.
 - Detects a win on any row, column or diagonal, and a draw when the board is full, then starts a new round.
 - Keeps the score of each player until you reset it.
-- **New Game** clears the board; **Rest** clears the board and the score.
+- **New Game** clears the board; **Reset** clears the board and the score.
 
 ## Requirements
 
